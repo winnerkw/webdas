@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Registrasi</title>
+</head>
+
+<body>
+	<form action="contact.php" method="post">
+	<fieldset>
+	<legend>Registrasi</legend>		
+	<p>
+		<label>Nama&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : </label>
+		<input type="text" name="nama" placeholder="Nama Lengkap..." />
+	</p>
+	<p>
+		<label>Username&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:</label>
+		<input type="text" name="username" placeholder="Username..." />
+	</p>
+	<p>
+	  <label>Email&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :</label>
+		<input type="text" name="email" placeholder="Your Email..." />
+	</p>
+	<p>
+		<label>Password&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :</label>
+		<input type="password" name="password" placeholder="Your Password..." />
+	</p>
+	<p>
+		<label>Agama&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :</label>	
+		<select name="agama">
+			<option value="Islam"> Islam</option>
+			<option value="Kristen"> Kristen</option>
+			<option value="Hindu"> Hindu</option>
+			<option value="Budha"> Budha</option>
+			<option value="Katholik"> Katholik</option>
+		</select>
+	</p>
+	<p>
+	  <label>Alamat web&nbsp; &nbsp; &nbsp; &nbsp; :</label>	
+	  <input type="url" name="name" placeholder="Masukan URL Web..."/>
+	</p>
+	<p>
+	  <label>Tanggal Lahir&nbsp; &nbsp;:</label>	
+		<input type="date" name="tanggal" />
+	</p>	
+	<p>
+	  <label>Umur&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :</label>	
+	  <input type="number" min="10" max="90" name="umur" />
+	</p>	
+	<p>
+	  <label>Jenis Kelamin:</label>	
+		<label><input type="radio" name="jenis_kelamin" value="Laki-Laki"/> Laki-Laki</label>
+		<label><input type="radio" name="jenis_kelamin" value="Perempuan"/> Perempuan</label>
+	</p>		
+	<p>
+		<label>Biografi:</label>	
+		<textarea name="biografi"></textarea>
+	</p>
+	<p>
+		<input type="submit" name="submit" value="Daftar" />	
+	</p>	
+	</fieldset>
+	</form>
+</body>
+</html>

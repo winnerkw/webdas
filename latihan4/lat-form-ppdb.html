@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir PPDB</title>
+</head>
+<body>
+    <form action="contact.php" method="post">
+        <style>
+            fieldset{
+                width: 1000px; /* lebar */
+                border-color: red; /*warna garis tepi */
+                box-shadow: 25px 25px 25px #333; /*bayangan */
+            }
+        </style>
+        
+        <fieldset>
+            <legend align="center"><h2>Formulir PPDB Jalur Zonasi Tahun 2020</h2></legend>
+            <center><img src="1531713840.jpg" width="300x" height="200px"/></center>
+            <h4>INFO PENDAFTARAN</h4>
+            <p>
+                <label>Nama&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </label>
+                <P><input type="text" name="nama" placeholder="Nama Lengkap..."> </P>
+            </p>
+            <p>
+                <label>Asal Sekolah&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                <p><input type="text" name="asalsekolah" placeholder="Asal Sekolah..."></p>
+            </p>
+            <p>
+                <label>Tahun Lulus&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </label>
+                <p><input type="text" name="tahunlulus" placeholder="Tahun Lulus..."></p>
+            </p>
+            <p>
+                <tabel>Foto Copy Ijazah yang Telah Dilegalisir (Dilampirkan)</tabel>
+                <input type="file" name="akte" />
+            </p>
+            <legend><b>DATA CALON PESERTA</b></legend>
+            <p>
+                <label>Nama Lengkap&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </label>
+                <p><input type="text" name="namalengkap" placeholder="Nama Lengkap..."></p>
+            </p>
+            <p>
+                <label>NIK</label>
+                <p><input type="text" name="nik" placeholder="NIK..."></p>
+            </p>
+            <p>
+                <label>Umur&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                <p><input type="number" min="10" max="90" name="umur"></p>
+            </p>
+            <p>
+                <label>Tempat Tanggal Lahir&nbsp;</label>
+                <input type="text" name="lahir" placeholder="Tempat Tanggal Lahir"> <label>Tanggal Lahir&nbsp;:</label>
+                    <input type="date" name="Tanggal" />
+            </p>
+            <p>
+                <label><input type="radio" name="jenis_kelamin" value="Laki-Laki"/>Laki-Laki</label>
+                <label><input type="radio" name="jenis_kelamin" value="Perempuan"/>Perempuan</label> 
+            </p>
+                <p>
+                    <tabel>Foto Copy Akte Kelahiran Yang Telah Dilealisir (Dilampirkan)</tabel>
+                    <input type="file" name="akte" />
+                </p>
+            <p>
+                <label>Agama&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </label>
+                <select name="Agama">
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
+                    <option value="Katholik">Katholik</option>
+                </select>
+            </p>
+            <p>
+                <label>Alamat</label>
+                <p></p>><input type="text" name="alamat" placeholder="Alamat..."></p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Desa/Kel&nbsp; &nbsp; &nbsp; :&nbsp;<input type="text" name="desa" placeholder="desa/kel"/></p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Kecamatan &nbsp; :&nbsp;<input type="text" name="kecamatan" placeholder="kecamatan"/></p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Kabupaten&nbsp; &nbsp; :
+                <input type="text" name="kab" placeholder="kabupaten"/></p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Provinsi&nbsp; &nbsp; &nbsp; &nbsp; :
+                <input type="text" name="prov" placeholder="provinsi"/></p>
+            <p>
+                <label>Email Aktif&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                <p></p>><input type="text" name="email" placeholder="Email---"></p>
+            </p>
+                <legend><b>DATA ORANG TUA</b></legend>
+            <p>
+                <label>Nama Kartu Keluarga&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                <p><input type="text" name="nama" placeholder="Nama Lengkap..."></p>
+            </p>
+            <p>
+                <label>No Kartu Keluarga &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                <p><input type="text" name="KK" placeholder="KK..."></p>
+            </p>
+            <p>
+                <label>Nama Ayah Kandung&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                <p><input type="text" name="asalsekolah" placeholder="Asal Sekolah..."></p>
+            </p>
+            <p>
+                <label>Agama&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </label>
+                <select name="Agama">
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
+                    <option value="Katholik">Katholik</option>
+                </select>
+            </p>
+            <p>
+                <label>Pekerjaan&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                <p><input type="text" name="nama" placeholder="Nama Lengkap..."></p>
+            </p>
+            <p>
+                <label>Nama Ibu Kandung&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                <p><input type="text" name="asalsekolah" placeholder="Asal Sekolah..."></p>
+            </p>
+            <p>
+                <label>Agama&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </label>
+                <select name="Agama">
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
+                    <option value="Katholik">Katholik</option>
+                </select>
+            </p>
+            <p>
+                <label>Pekerjaan&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                <p><input type="text" name="nama" placeholder="Nama Lengkap..."></p>
+            </p>
+            <p>
+                <label>Alamat Orang Tua</label>
+                <p></p>><input type="text" name="alamat" placeholder="Alamat..."></p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Desa/Kel&nbsp; &nbsp; &nbsp; :&nbsp;<input type="text" name="desa" placeholder="desa/kel"/></p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Kecamatan &nbsp; :&nbsp;<input type="text" name="kecamatan" placeholder="kecamatan"/></p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Kabupaten&nbsp; &nbsp; :
+                <input type="text" name="kab" placeholder="kabupaten"/></p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Provinsi&nbsp; &nbsp; &nbsp; &nbsp; :
+                <input type="text" name="prov" placeholder="provinsi"/></p>
+            <p>
+                <input type="submit" name="submit" value="Daftar" />
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
