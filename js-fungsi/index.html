@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belajar Fungsi di Javascript</title>
+</head>
+<body>
+    <h3>Pilih Warna Sesuai Seleramu!!!</h3>
+    <label>Warna latar : </label>
+    <input type="color" id="bg-color" />
+    <br>
+    <label>Warna teks : </label>
+    <input type="color" id="text-color" />
+    <br>
+
+    <h1>Form Barang</h1>
+    <fieldset>
+        <legend>Input Form</legend>
+        <input type="text" name="barang" placeholder="input nama barang..." />
+        <input type="button" onclick="addBarang()" value="Tambah" />
+    </fieldset>
+
+    <div>
+        <ul id="list-barang">
+        </ul>
+    </div>
+
+    <script src="fungsi.js"></script>
+</body>
+</html>
