@@ -1,0 +1,85 @@
+body {
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRMcPgVc78FtCCADyx0ia36s20TL4v_5benQw&usqp=CAU.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:	#FF3333;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+}
+
+li a:hover:not(.active) {
+    background-color: 	#A9A9A9;
+}
+
+.active {
+    background-color: 	#66B2FF;
+}
+
+.isi {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 #056676;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}               
+
+.para1 {
+    text-align: right;
+    color:red;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 40px;
+    text-align: center;
+    color : white;
+}
+
+th {
+    background-color: #333;
+}
+
+td {
+    background-color: #EA6852;
+}
+
+.utama{
+    width: 100%;
+    overflow: hidden;
+}
+
+.konten{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.isi_gambar{
+    width: 25%; 
+    float: left;  
+}
+
+.isi2{
+    width: 400%;
+}
+
+.utama img{
+    width: 100%;
+    float: left;
+}

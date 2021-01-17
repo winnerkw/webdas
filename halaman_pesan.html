@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Halaman Pemesanan Masker</title>
+        <link rel="stylesheet" type="text/css" href="halaman_pesan.css">
+        <script language="javascript" src="halaman_pesan.js"></script>
+    </head>
+    <body>
+        <img src="heading.png" width="100%" height=auto>
+            
+            <ul class="navbar">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="buku_tamu.html">Buku Tamu</a></li>
+                <li><a class="active" href="halaman_pesan.html">Pemesanan</a></li>
+            </ul>
+            
+            <hr>
+            <article class="isi">
+                <div align="center">
+                    <h1>Halaman Pemesanan Masker</h1>
+                    <form method="POST" action=“simpan.php”>
+                      <fieldset>
+                          <legend>DATA Pembeli</legend>
+                          <p>
+                              <label>Nama Lengkap:</label>
+                              <input type="text" name="nama lengkap" placeholder="Nama Lengkap..." />
+                          </p>
+                          <p>
+                              <label>Nomor HP:</label>
+                              <input type="number" name="no hp" placeholder="Nomor HP..." />
+                          </p>
+                          <p>
+                              <label>Alamat:</label>
+                              <input type="text" name="alamat" placeholder="Alamat..." />
+                          </p>
+                          <p>
+                              <label>Desa/Kel:</label>
+                              <input type="text" name="desa" placeholder="Desa/Kel..." />
+                          </p>
+                          <p>
+                              <label>Kecamatan:</label>
+                              <input type="text" name="kecamatan" placeholder="Kecamatan..." />
+                          </p>
+                          <p>
+                              <label>Kabupaten:</label>
+                              <input type="text" name="kabupaten" placeholder="Kabupaten..." />
+                          </p>
+                          <p>
+                              <label>Provinsi:</label>
+                              <input type="text" name="provinsi" placeholder="Provinsi..." />
+                          </p>
+                          <p>
+                            <label>Metode Bayar Bank:</label>
+                            <select name="metode bayar">
+                                <option value="none">---::---</option>
+                                <option value="bni">BNI</option>
+                                <option value="bca">BCA</option>
+                                <option value="bri">BRI</option>
+                                <option value="danamon">DANAMON</option>
+                                <option value="mandiri">MANDIRI</option>
+                            </select>
+                          </p>
+                      </fieldset>
+                    </form>
+                    <form action="simpan.php" method="POST" name="form1">
+                    <table width="610" border="1">
+                  
+                      <tr>
+                        <td width="150"><div align="left"><strong>Nama Barang</strong></div></td>
+                        <td width="144"><div align="center"><strong>Harga</strong></div></td>
+                        <td width="144"><div align="center"><strong>Jumlah Barang</strong></div></td>
+                        <td width="144"><div align="center"><strong>Total</strong></div></td>
+                      </tr>
+                      <tr>
+                        <td><select name="namaBarang" onchange="list()">
+                          <option value="0">- Pilih Barang -</option>
+                          <option value="5000">Masker headloop warna hijau</option>
+                          <option value="5000">Masker headloop warna hitam</option>
+                          <option value="5000">Masker headloop warna pink</option>
+                          <option value="5000">Masker headloop warna putih</option>
+                          <option value="5000">Masker headloop warna biru</option>
+                          <option value="3000">Masker headloop warna random/acak</option>
+                          <option value="5000">Masker earloop warna hijau</option>
+                          <option value="5000">Masker earloop warna hitam</option>
+                          <option value="5000">Masker earloop warna pink</option>
+                          <option value="5000">Masker earloop warna putih</option>
+                          <option value="5000">Masker earloop warna biru</option>
+                          <option value="3000">Masker earloop warna random/acak</option>
+                            </select> </td>
+                        <td><input type="text" name="hargaBarang" id="hargaBarang" disabled="disabled" /></td>
+                        <td><input type="text" name="jumBarang" id="jumBarang" onblur="hargabarang()" /></td>
+                        <td><input type="text" name="totBarang" id="totBarang" disabled="disabled" /></td>
+                      </tr>
+                  
+                  <table width="500" border="1">
+                        <table align="center"border="1"cellpadding="0"cellpacing="0"bordercolor="black">
+                      </tr>
+                        <td colspan="3"><strong>Jumlah Bayar</strong></td>
+                        <td><input type="text" name="total" id="total" disabled="disabled" /></td>
+                      </tr>
+                  
+                      <tr>
+                        <td colspan="4"><input type="button" name="Submit" value="Submit" onclick="backHome()"/>
+                          <input type="reset" name="Submit2" id="Submit2" value="Reset" /></td>
+                        </tr>
+                    </table>
+                    </form>
+                  </div>
+                  
+                <!--paragraf-->
+                <h1>Pembayaran melalui rekening BCA 01010101 atas nama KELOMPOK WEB</h1>
+                <!--gambar-->
+                <div style="text-align:center;">
+                  <img src="masker.jpg">
+                </div>
+                <p>Tersedia dalam berbagai warna :</p>
+                <ol>
+                    <li>Putih</li>
+                    <li>Hitam</li>
+                    <li>Biru</li>
+                    <li>Hijau</li>
+                    <li>Pink</li>
+                </ol>
+
+            <hr>
+
+            <p class="para1">Copyright &copy; 2020 by kelompok</p>
+    </body>
+</html>

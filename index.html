@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beranda</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script language="javascript" src="index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script>
+            $.ajax({
+                    url : 'https://coronavirus-19-api.herokuapp.com/countries' ,
+                    success : function(data){
+                        var json = data;
+                        var html = []
+                        if (json.length > 0){
+                            var i;
+                            for(i = 0; i<json.length; i++){
+                                var datanegara = json[i];
+                                var namanegara = datanegara.country;
+                                if(namanegara === 'Indonesia'){
+                                    var aktif = datanegara.cases;
+                                    var meninggal = datanegara.deaths;
+                                    var sembuh = datanegara.recovered;
+                                    $('#data-aktif').html(aktif);
+                                    $('#data-meninggal').html(meninggal);
+                                    $('#data-sembuh').html(sembuh);
+                                }
+                            }
+                        }
+                    },
+                    
+                });
+            function datanegara(){
+                
+            }
+        </script>
+    </head>
+    <body>
+        <img src="heading.png" width="100%" height=auto>
+        <ul class="navbar">
+            <li><a class="active" href="index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="buku_tamu.html">Buku Tamu</a></li>
+            <li><a href="halaman_pesan.html">Pemesanan</a></li>
+        </ul>
+        <div class="utama">
+            <div class="konten">
+                <div class="isi2" id="slide">
+                    <div class="isi_gambar" >
+                        <img id="slide" src="https://kih.co.id/wp-content/uploads/2020/01/corona-web-2.0-02-02.jpg">
+                    </div>
+                    <div class="isi_gambar">
+                        <img id="slide" src="https://admin.corona.jatengprov.go.id/gallery/741420743.jfif">
+                    </div>
+                    <div class="isi_gambar">
+                        <img id="slide" src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2020/11/26/1466820601.png">
+                    </div>
+                    <div class="isi_gambar">
+                        <img id="slide" src="https://asset.kompas.com/crops/97-2OM2pvVFUXMpzg5D7lFP6Mm8=/0x0:4896x3264/750x500/data/photo/2020/06/15/5ee6dbeb86d18.jpg">
+                    </div>
+                </div>
+            </div>  
+        </div>
+            
+            <hr>
+            <article class="isi">
+                <!--heading--> 
+                <h1 style="color:#202020; font-size:250%;   text-align:center">COVID-19</h1>
+
+                <h2 style="text-align:center;">Virus Corona merupakan keluarga  besar virus yang menyebabkan infeksi saluran pernapasan atas     ringan hingga sedang, seperti penyakit flu. 
+                <br>Banyak orang terinfeksi virus ini.Virus ini menular ke  semua umat manusia yang ada di dunia ini dari lansia hingga  bayi yang baru saja lahir</h2>
+                
+                <!--gambar-->
+                <div style="text-align:center;">
+                    <a href="linkwebcorona" target="_blank"><img    src="https://cdn-2.tstatic.net/newsmaker/foto/bank/images2/update-corona-virus-dunia.jpg" width="50%" ></a>
+                </div>
+
+
+                <!--paragraf-->
+                <p><b>Infeksi Virus Corona (Covid-19)</b> pertama kali  ditemukan di kota Wuhan,China pada akhir Desember 2019. virus    ini pun menular dengan cepat dan hampir ke semua negara,   termasuk Indonesia hanya dalam waktu beberapa bulan. Hal  tersebutlah yang menyebabkan beberapa negara memberlakukan   kebijakan lockdown dalam rangka mencegah penyebaran virus     corona ini. </p>
+                <p>Coronavirus pada dasarnya melakukan penularan lewat percikan     dahak(droplet) dari saluran pernapasan. </p>
+                <h2><b>Dalam website ini membahas beberapa topik yaitu :</b></  h2>
+
+                <h4>Penyebab Infeksi Coronavirus:</h4>
+                <p>Kebanyakan virus corona menyebar seperti virus lain pada     umumnya seperti :</p>
+
+                <!--list-->
+                <ul class = "point-artikel">
+                    <li>Percikan air liur dari batu/bersin pengidap</li>
+                    <li>Menyentuh tangan atau wajah orang yang terinfeksi</li>
+                    <li>Menyentuh area wajah saat tangan belum bersih</li>
+                </ul>
+
+                <p>Sebenarnya virus ini jarang sekali berevolusi dan    menginfeksi manusia serta menyebar secara cepat seperti ini.   Namun kasus yang terjadi di China akhir Desember 2019 inilah  yang menjadi bukti kuat dan nyata kalau virus ini dapat  menyebar dari hewan ke manusia. Bahkan sekarang penularan bisa   saling terjadi antar manusia.</p>
+
+                <h4>Gejala Infeksi virus corona</h4>
+                <p>Gejala awal infeksi virus Covid-19 menyerupai gejala flu,    seperti demam, pilek, batuk sakit tenggorokan dan sakit kepala.    Setelah itu gejala dapat hilang dan sembuh atau justru semakin     berat. Penderita dengan gejala yang berat bisa mengalami demam  tinggi, batuk berdahak, sesak napas, dan nyeri dada. </p>
+                <p>Gejala ini pada umumnya timbul dalam waktu 2-14 hari setelah     penderita terpapar virus ini. </p>
+
+                <!--video-->
+                <h3 style="text-align: center;"><b>UPDATE COVID-19</b></h3>
+
+                <div style="text-align:center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XUWtNEFKfAI"    frameborder="0"     allow="accelerometer; autoplay; clipboard-write;    encrypted-media;  gyroscope; picture-in-picture"   allowfullscreen></iframe>
+                </div>
+
+                <!--paragraf-->
+                <p>Hal-hal yang diperlukan untuk mencegah penularan Covid-19   yaitu:</p>
+
+                <!--list-->
+                    <ul class = "point-artikel">
+                        <li>Menerapkan phycsical distancing, yaitu menjaga  jarak minimal 1.5 meter dari orang   lain.</li>
+                        <li>Gunakan masker saat beraktivitas di tempat umum/    keramaian. Jika tidak ada keperluan     mendesak, maka  lebih baik jika tinggal di rumah saja.</li>
+                        <li>Hindari menyentuh wajah,hidung, ataupun wajah saat  tangan masih kotor dan belum     dicuci.</li>
+                        <li>Seringlah cuci tangan dengan sabun selama 20detik   hingga bersih.</li>
+                        <li>Lebih baik di rumah ketika merasa kurang enak badan.    </li>
+                        <li>Jaga kebersihan benda yang disentuh dan kebersihan  lingkungan.</li>
+                        <li>Menjaga kebersihan dengan menutup hidung dan mulut  ketika bersin atau batuk dengan  tisu. Lalu buang tisuh  dan cuci tangan hingga bersih kembali.</li>
+                        <li>Tingkatkan daya tahan tubuh dengan menjaga pola     hidup sehat.</li>
+                    </ul>
+                </div>
+                
+                <h1 style="text-align:center">JUMLAH KASUS COVID-19 INDONESIA</h1>
+
+                <!--tabel-->
+                <div class = "tabel">
+                    <table style="margin-left:auto;margin-right:auto">
+                        <tr>
+                            <th>AKTIF</th>
+                            <td id="data-aktif"></td>
+                        </tr>
+                        <tr>
+                            <th>SEMBUH</th>
+                            <td id="data-sembuh"></td>
+                        </tr>
+                        <tr>
+                            <th>MENINGGAL</th>
+                            <td id="data-meninggal"></td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <br>
+                <img src="jorgan.jpg" width = 50% height=auto style="display: block; margin: auto;">
+                
+                <p>Mari ikut berpartisipasi dalam langkah pengurangan penyebaran virus corona dengan selalu pakai masker saat berada di keramaian dan tempat umum, jaga jarak dan selalu cuci tangan. Pakai masker minimal memiliki 3 lapisan, bisa membeli produk masker 3ply di kami <br><br> Dengan berbagai fitur utama sebagai berikut:</p>
+                
+                <h1 style="text-align:center; color: red">MASKER ANTI HACKER</h1>
+                
+                <ol>
+                    <li>Memiliki lapisan 3ply<br>Lapisan pertama terbuat dari kain yang menyaring udara luar.
+                        Lapisan kedua terbuat dari lapisan carbon yang efektif menahan bakteri, virus maupun kuman mikropartikel agar tidak ikut terhirup saat bernapas.
+                        Lapisan ketiga terbuat dari kain katun jepang yang lembut dan halus terhadap kulit dan mulut.</li>
+                    <li>Anti percikan air, membuat anda dapat beraktifitas dengan bebas.</li>
+                </ol>
+
+                <p>Tersedia dalam berbagai warna :</p>
+                <ol>
+                    <li>Putih</li>
+                    <li>Hitam</li>
+                    <li>Biru</li>
+                    <li>Hijau</li>
+                    <li>Pink</li>
+                </ol>
+
+                <img src="masker.jpg">
+
+                <p>Tepat digunakan untuk :</p>
+                <ol>
+                    <li>Aktifitas yang mengharuskan berada di lingkungan jalan raya yang berdebu seperti pengendara motor maupun penumpang transportasi umum.</li>
+                    <li>Pejalan kaki.</li>
+                    <li>Pekerja kantor.</li>
+                </ol>
+               
+                <h2 style="text-align:center">Untuk Pemesanan dan Reseller Bisa Menghubungi Kontak Dibawah (klik gambar)</h2>
+                <a href="https://wa.me/6285157732095" target="_blank"><img src="wa.png" style="display: block; margin: auto;" onclick="toWa()"></a>
+
+                <h2 style="text-align:center">atau bisa klik tulisan di bawah untuk pemesanan langsung melalui web ini</h2>
+                <a href="halaman_pesan.html" target="_blank"><img src="klik.png" style="display: block; margin: auto;" onclick="toOrder()"></a>
+            </article>
+
+                
+            <!--buat link-->
+            <h2 style="text-align:center">SITUS RESMI COVID-19 INDONESIA</h2>
+            <a href="https://covid19.go.id" target="_blank"><img src="klik.png" style="display: block; margin: auto;" onclick="toWeb()"></a>
+            <hr>
+
+            <p class="para1">Copyright &copy; 2020 by kelompok</p>
+    </body>
+</html>
